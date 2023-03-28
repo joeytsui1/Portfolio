@@ -2811,6 +2811,7 @@ input, select, textarea {
 		margin: 0 0 3em ;
 		padding: 0;
 		list-style: none;
+		margin-left: -50px;
 	}
 
 		.features li {
@@ -2818,7 +2819,7 @@ input, select, textarea {
 			margin-left: 2em;
 			margin-top: 3em;
 			padding: 0;
-			padding-bottom: 200px;
+			padding-bottom: 90px;
 		}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
@@ -2826,7 +2827,11 @@ input, select, textarea {
 			}
 
 			.features li > :last-child {
-				margin-bottom: 0;
+				margin-bottom: 0px;
+			}
+
+			.features:last-child {
+				margin-bottom: 50px;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -2863,10 +2868,11 @@ input, select, textarea {
 /* Statistics */
 
 	.statistics {
-		display: -moz-flex;
+		/* display: -moz-flex;
 		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		display: -ms-flex; */
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
 		width: 100%;
 		margin: 0 0 3em 0;
 		padding: 0;
@@ -2913,7 +2919,7 @@ input, select, textarea {
 				letter-spacing: -0.025em;
 			}
 
-			.statistics li:first-child {
+			/* .statistics li:first-child {
 				border-top-left-radius: 8px;
 				border-bottom-left-radius: 8px;
 			}
@@ -2921,7 +2927,7 @@ input, select, textarea {
 			.statistics li:last-child {
 				border-top-right-radius: 8px;
 				border-bottom-right-radius: 8px;
-			}
+			} */
 
 			.statistics li .icon {
 				display: inline-block;
@@ -3788,5 +3794,49 @@ input, select, textarea {
 		.auto-type{
 			color: #e37682;
 		}
+	.links {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		padding-left: 60px;
+		padding-right: 60px;
+		padding-bottom: 30px;
+	}
 
-	
+	.devicon-ruby-plain{
+		font-size: 60px;
+	}
+
+	.devicon-rails-plain{
+		font-size: 60px;
+	}
+	.devicon-javascript-plain{
+		font-size: 60px;
+	}
+	.devicon-react-original{
+		font-size: 60px;
+	}
+	.devicon-html5-plain-wordmark{
+		font-size: 60px;
+	}
+	.devicon-css3-plain{
+		font-size: 60px;
+	}
+	.devicon-mongodb-plain{
+		font-size: 60px;
+	}
+	.devicon-express-original{
+		font-size: 60px;
+	}
+	.devicon-nodejs-plain{
+		font-size: 60px;
+	}
+	.devicon-redux-original{
+		font-size: 60px;
+	}
+	.devicon-postgresql-plain{
+		font-size: 60px;
+	}
+	.devicon-git-plain{
+		font-size: 60px;
+	}
