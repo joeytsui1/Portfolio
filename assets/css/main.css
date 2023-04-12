@@ -2676,6 +2676,10 @@ input, select, textarea {
 		margin-top: 3em;
 	}
 
+	#first.main.special {
+		margin-bottom: -250px;
+	}
+
 	@media screen and (max-width: 736px) {
 
 		header.major {
@@ -2830,9 +2834,9 @@ input, select, textarea {
 				margin-bottom: 0px;
 			}
 
-			.features:last-child {
+			/* .features:last-child {
 				margin-bottom: 50px;
-			}
+			} */
 
 		@media screen and (max-width: 980px) {
 
@@ -2863,6 +2867,16 @@ input, select, textarea {
 						margin-top: 2em;
 					}
 
+		}
+
+		.features li {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.features li > img {
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 
 /* Statistics */
